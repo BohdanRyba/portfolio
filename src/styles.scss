@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,latin-ext');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: #2E8E02;
+}
+body {
+  color: #2E8E02;
+  font-family: 'Roboto',Arial, sans-serif;
+  font-size: 16px;
+}
+.navbar-brand{
+  color: #2E8E02!important;
+  font-weight: 600;
+}
+.nav-link{
+  color: #2E8E02!important;
+  font-weight: 400;
+}
+.dropdown-item{
+  color: #2E8E02!important;
+  font-weight: 400;
+}

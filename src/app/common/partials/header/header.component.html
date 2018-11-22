@@ -1,0 +1,47 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-light">
+
+  <!-- Navbar brand -->
+  <mdb-navbar-brand><a class="navbar-brand" href="#">AgurSoft</a></mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links>
+
+    <!-- Links -->
+    <ul class="navbar-nav ml-auto ">
+      <li class="nav-item">
+        <a routerLink="/" class="nav-link waves-light" mdbWavesEffect>Home</a>
+      </li>
+
+      <li class="nav-item" [routerLinkActive]="'active'">
+        <a routerLink="/about-me" class="nav-link waves-light" mdbWavesEffect>About Me </a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="'active'">
+        <a routerLink="/contact-me" class="nav-link waves-light" mdbWavesEffect>Contact Me </a>
+      </li>
+
+      <li class="nav-item" [routerLinkActive]="'active'">
+        <a routerLink="/portfolio" class="nav-link waves-light" mdbWavesEffect>Portfolio </a>
+      </li>
+
+      <li class="nav-item" [routerLinkActive]="'active'">
+        <a routerLink="/blog" class="nav-link waves-light" mdbWavesEffect>Blog </a>
+      </li>
+
+      <!-- Dropdown -->
+      <li class="nav-item dropdown" [routerLinkActive]="'active'" dropdown>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+          Auth<span class="caret"></span></a>
+        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+          <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/auth">Login</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/auth/register">Register</a>
+        </div>
+      </li>
+
+    </ul>
+    <!-- Links -->
+
+  </links>
+  <!-- Collapsible content -->
+
+</mdb-navbar>
